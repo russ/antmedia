@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://mediaserver:5080/LiveApp/rest/v2/broadcasts/zB8NWz5YGkOo1601328273306
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '847'
+      date:
+      - Tue, 29 Sep 2020 18:14:28 GMT
+    body:
+      encoding: UTF-8
+      string: '{"streamId":"zB8NWz5YGkOo1601328273306","status":"broadcasting","type":"liveStream","name":"russ","description":null,"publish":true,"date":1601328273306,"plannedStartDate":0,"plannedEndDate":0,"duration":0,"endPointList":null,"publicStream":true,"is360":false,"listenerHookURL":null,"category":null,"ipAddr":null,"username":null,"password":null,"quality":null,"speed":1.0574238578680204,"streamUrl":null,"originAdress":"20.10.12.147","mp4Enabled":0,"webMEnabled":0,"expireDurationMS":0,"rtmpURL":"rtmp://20.10.11.156/LiveApp/zB8NWz5YGkOo1601328273306","zombi":false,"pendingPacketSize":1,"hlsViewerCount":0,"webRTCViewerCount":-2,"rtmpViewerCount":0,"startTime":1601403097927,"receivedBytes":0,"bitrate":0,"userAgent":"N/A","latitude":null,"longitude":null,"altitude":null,"mainTrackStreamId":null,"subTrackStreamIds":null,"absoluteStartTimeMs":0}'
+  recorded_at: Tue, 29 Sep 2020 18:14:28 GMT
+recorded_with: VCR 6.0.0

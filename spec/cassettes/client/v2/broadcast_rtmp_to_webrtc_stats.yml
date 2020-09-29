@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://mediaserver:5080/LiveApp/rest/v2/broadcasts/zB8NWz5YGkOo1601328273306/rtmp-to-webrtc-stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '493'
+      date:
+      - Tue, 29 Sep 2020 18:15:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"streamId":"zB8NWz5YGkOo1601328273306","encoderCount":1,"totalVideoIngestTime":47663,"totalIngestedVideoPacketCount":7241,"totalVideoDecodeTime":0,"totalDecodedVideoFrameCount":0,"totalVideoEncodeQueueTime":0,"totalVideoEncodeTime":0,"totalEncodedVideoPacketCount":0,"totalVideoDeliveryTime":178,"totalDeliveredVideoPacketCount":7241,"absoluteTotalIngestTime":11595759836010206,"absoluteTimeMs":0,"absouteTotalLatencyUntilRTPPacketizingTimeMs":11595759836060858,"frameId":0,"captureTimeMs":0}'
+  recorded_at: Tue, 29 Sep 2020 18:15:44 GMT
+recorded_with: VCR 6.0.0

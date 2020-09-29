@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://mediaserver:5080/LiveApp/rest/v2/version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '88'
+      date:
+      - Tue, 29 Sep 2020 17:54:30 GMT
+    body:
+      encoding: UTF-8
+      string: '{"versionName":"2.1.0","versionType":"Enterprise Edition","buildNumber":"20200720_1328"}'
+  recorded_at: Tue, 29 Sep 2020 17:54:31 GMT
+recorded_with: VCR 6.0.0

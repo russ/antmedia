@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://mediaserver:5080/LiveApp/rest/v2/broadcasts/zB8NWz5YGkOo1601328273306/broadcast-statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '83'
+      date:
+      - Tue, 29 Sep 2020 18:15:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"totalRTMPWatchersCount":0,"totalHLSWatchersCount":0,"totalWebRTCWatchersCount":1}'
+  recorded_at: Tue, 29 Sep 2020 18:15:44 GMT
+recorded_with: VCR 6.0.0

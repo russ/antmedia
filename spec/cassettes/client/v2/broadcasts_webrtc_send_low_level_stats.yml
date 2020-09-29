@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://mediaserver:5080/LiveApp/rest/v2/broadcasts/webrtc-send-low-level-stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '363'
+      date:
+      - Tue, 29 Sep 2020 18:14:28 GMT
+    body:
+      encoding: UTF-8
+      string: '{"audioSendStats":{"audioPacketsSent":0,"audioBytesSent":0,"audioPacketsPerSecond":0,"audioBytesSentPerSecond":0,"timeMs":0},"videoSendStats":{"videoFirCount":0,"videoPliCount":0,"videoNackCount":0,"videoPacketsSent":0,"videoFramesEncoded":0,"videoBytesSent":0,"videoPacketsSentPerSecond":0,"videoBytesSentPerSecond":0,"videoFramesEncodedPerSecond":0,"timeMs":0}}'
+  recorded_at: Tue, 29 Sep 2020 18:14:28 GMT
+recorded_with: VCR 6.0.0

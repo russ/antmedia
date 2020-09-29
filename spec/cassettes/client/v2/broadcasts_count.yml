@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://mediaserver:5080/LiveApp/rest/v2/broadcasts/count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '12'
+      date:
+      - Tue, 29 Sep 2020 17:57:04 GMT
+    body:
+      encoding: UTF-8
+      string: '{"number":1}'
+  recorded_at: Tue, 29 Sep 2020 17:57:04 GMT
+recorded_with: VCR 6.0.0

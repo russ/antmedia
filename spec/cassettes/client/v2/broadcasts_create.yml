@@ -1,0 +1,31 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://mediaserver:5080/LiveApp/rest/v2/broadcasts/create
+    body:
+      encoding: UTF-8
+      string: '{"name":"test"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.1
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      access-control-allow-origin:
+      - "*"
+      content-type:
+      - application/json
+      content-length:
+      - '814'
+      date:
+      - Tue, 29 Sep 2020 19:47:17 GMT
+    body:
+      encoding: UTF-8
+      string: '{"streamId":"9ySZYTT2zm1K1601408837760","status":"created","type":"liveStream","name":"test","description":null,"publish":true,"date":1601408837760,"plannedStartDate":0,"plannedEndDate":0,"duration":0,"endPointList":null,"publicStream":true,"is360":false,"listenerHookURL":null,"category":null,"ipAddr":null,"username":null,"password":null,"quality":null,"speed":0.0,"streamUrl":null,"originAdress":"20.10.12.147","mp4Enabled":0,"webMEnabled":0,"expireDurationMS":0,"rtmpURL":"rtmp://20.10.12.147/LiveApp/9ySZYTT2zm1K1601408837760","zombi":false,"pendingPacketSize":0,"hlsViewerCount":0,"webRTCViewerCount":0,"rtmpViewerCount":0,"startTime":0,"receivedBytes":0,"bitrate":0,"userAgent":"N/A","latitude":null,"longitude":null,"altitude":null,"mainTrackStreamId":null,"subTrackStreamIds":null,"absoluteStartTimeMs":0}'
+  recorded_at: Tue, 29 Sep 2020 19:47:17 GMT
+recorded_with: VCR 6.0.0
